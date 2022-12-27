@@ -22,7 +22,7 @@ class Transaction():
         self.type_of_model = type_of_model
         model_random_forest = load("rsc/models/random_forest.joblib")
         model_xgboost = load("rsc/models/xgb.joblib")
-        self.model = model_xgboost if type_of_model == "xgboost" else model_random_forest
+        self.model = eval(f"model_{type_of_model}")
     
     def to_pandas_dataframe(self):
         return pd.DataFrame([

@@ -6,4 +6,4 @@ STATES = [ 'AK', 'AL', 'AR', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE', 'FL', 'GA',
 
 GENDERS = ['F', 'M']
 
-CLASSIFIER = ['random forest', 'xgboost']
+CLASSIFIER = ['random_forest', 'xgboost']
